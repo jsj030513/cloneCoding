@@ -1,25 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WENIV 클론코딩</title>
+  <link rel="stylesheet" href="./../css/weniv.css">
 </head>
-<body>
-   <header class="webtop">
-    <div>
-      
-    </div>
-  </header>
-  <main>
-    <div>
 
-    </div>
+<body>
+  <header class="webtop">
+    <nav class="logo">
+      <ul>
+        <li>
+          <a href="https://weniv.co.kr/">
+            <img src="./../img/weniv-logo-2023/weniv-logo.png" alt="weniv page"
+            width="15%" height="15%">
+          </a>
+        </li>
+      <!-- 헤더에 추가할 것 이미지(홈으로 이동 가능한)  위니브 소개 강사진 교육 채용-->
+      </ul>
+    </nav>
+    <nav class="info">
+      <ul>
+        <li><a href="#">위니브 소개</a></li>
+        <li><a href="#">강사진</a></li>
+        <li><a href="#">교육</a></li>
+        <li><a href="#">채용 ↗</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 메인베너 2개  -->
+    <section class="main-container">
+      <div class="banner">
+        <img src="./../img/banner-1.png" alt="banner--1">
+        <div class="banner-content">
+          <h4>안녕하세요. 홈페이지입니다</h4>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="./../img/banner-2.png" alt="banner--2">
+        <div class="banner-content">
+          <h4> 두번째 배너 입니다 </h4>
+        </div>
+      </div>
+    </section>
+    <article class="find">
+        <h2>어떤 콘텐츠를 찾으시나요?</h2>
+        <fieldset>
+
+          <textarea id="comments" cols="15" rows="1" placeholder="검색어를 입력하세요"></textarea>
+          <button type="button">찾기</button>
+        </fieldset>
+
+        </div>
+      </ul>
+    </article>
+<!-- 중간에 있는 고정 시킬 거 띠 형식 flex사용 아마도 inline box...도? -->
+    <nav class="sticky-nav">
+      <ul>
+        <li>
+          <img src="./../img/second-banner/all.svg" alt="전체보기">
+          <span>전체보기</span>
+        </li>
+        <li>
+          <img src="./../img/second-banner/web-service.svg" alt="웹서비스">
+          <span>웹 서비스</span>
+        </li>
+        <li>
+            <img src="./../img/second-banner/online.svg" alt="온라인 강의">
+            <span>온라인 강의</span>
+        </li>
+        <li>
+          <img src="./../img/second-banner/ebook.svg" alt="전자책">
+          <span>전자책</span>          
+        </li>
+        <li>
+          <img src="./../img/second-banner/event.svg" alt="행사">
+          <span>행사</span>          
+        </li>
+        <li>
+          <img src="./../img/second-banner/opensource.svg" alt="오픈소스">
+          <span>오픈소스</span>          
+        </li>
+        <li>
+          <img src="./../img/second-banner/goods.svg" alt="이모티콘/굿즈">
+          <span>이모티콘/굿즈</span>          
+        </li>
+        <li>
+          <img src="./../img/second-banner/etc.svg" alt="기타">
+          <span>기타</span>          
+        </li>
+      </ul>
+    </nav>
+<!-- 여기에는 배너 12개... -->
+  <section class=""></section>
   </main>
+
   <footer>
-    <div class="footer--text-box">Weniv
+    <div class="footer--text-box">
+      <a href="https://weniv.co.kr/">
+        <img src="./../img/weniv-logo-2023/weniv-dark.png" alt="weniv page"
+        width="10%" height="10%"> 
+      </a>
 Copyright © WENIV All rights reserved<br>
-(주)위니브 | 대표 : 이호준 | 사업자번호 : 546-86-01737 | 정보통신업 | 주소 : 제주특별자치도 제주시 첨단로 330, A동 1층 CH-106호</div>
+(주)위니브 | 대표 : 이호준 | 사업자번호 : 546-86-01737 | 정보통신업 | 주소 : 제주특별자치도 제주시 첨단로 330, A동 1층 CH-106호
+    </div>
   </footer>
 </body>
 </html>
