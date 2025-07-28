@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +14,10 @@
       <ul>
         <li>
           <a href="https://weniv.co.kr/">
-            <img src="./../img/weniv-logo-2023/weniv-logo.png" alt="weniv page"
-            width="15%" height="15%">
+            <img src="./../img/weniv-logo-2023/weniv-logo.png" alt="weniv page" width="15%" height="15%">
           </a>
         </li>
-      <!-- 헤더에 추가할 것 이미지(홈으로 이동 가능한)  위니브 소개 강사진 교육 채용-->
+        <!-- 헤더에 추가할 것 이미지(홈으로 이동 가능한)  위니브 소개 강사진 교육 채용-->
       </ul>
     </nav>
     <nav class="info">
@@ -36,10 +36,12 @@
       <div class="banner">
         <img src="./../img/banner-1.png" alt="banner--1">
         <div class="banner-content">
-          <h4>안녕하세요. 홈페이지입니다</h4>
+          <h3>당신이 ICT 각 분야의</h3><br>
+          <h3>전문가로 성장할 수 있도록</h3><br>
+          <h6>모든 지식과 서비스를 제공하는 ICT 교육 콘텐츠 기업 위니브입니다.</h6>
         </div>
       </div>
-      <div class="banner">
+      <div class="banner2">
         <img src="./../img/banner-2.png" alt="banner--2">
         <div class="banner-content">
           <h4> 두번째 배너 입니다 </h4>
@@ -47,243 +49,261 @@
       </div>
     </section>
     <article class="find">
+      <Fieldset>
         <h2>어떤 콘텐츠를 찾으시나요?</h2>
-        <form action=""></form>
-        <fieldset>
-<!-- form 태그 -->
-          <textarea id="comments" cols="15" rows="1" placeholder="검색어를 입력하세요"></textarea>
-          <button type="button">찾기</button>
-        </fieldset>
-
+        <!-- form 태그 -->
+        <form action="" method="get">
+          <input type="text" id="search-input" placeholder="검색어를 입력하세요" />
+          <button type="button"><img src="./../img/search.svg" alt="searcg"> 찾기
+          </button>
+        </form>
         </div>
-      </ul>
+        </ul>
+      </Fieldset>
     </article>
-<!-- 중간에 있는 고정 시킬 거 띠 형식 flex사용 아마도 inline box...도? -->
+    <!-- sticky로 고정 시킬 것들 내비게이션 -->
     <nav class="sticky-nav">
       <ul>
-        <li>
+        <li class="basic">
           <label>
             <div>
-              <img src="./../img/second-banner/all.svg" alt="전체보기"><br>
-              <span>전체보기</span>
+              <a href="#" class="sticky-nav-underline">
+                <img src="./../img/second-banner/all.svg" alt="전체보기"><br>
+                <span>전체보기</span>
+              </a>
             </div>
           </label>
         </li>
         <li>
           <label>
             <div>
-              <img src="./../img/second-banner/web-service.svg" alt="웹서비스"><br>
-              <span>웹 서비스</span>
+              <a href="#" class="sticky-nav-underline">
+                <img src="./../img/second-banner/web-service.svg" alt="웹서비스"><br>
+                <span>웹 서비스</span>
+              </a>
             </div>
           </label>
         </li>
         <li>
           <label>
             <div>
-              <img src="./../img/second-banner/online.svg" alt="온라인 강의"><br>
-              <span>온라인 강의</span>
+              <a href="#" class="sticky-nav-underline">
+                <img src="./../img/second-banner/online.svg" alt="온라인 강의"><br>
+                <span>온라인 강의</span>
+              </a>
             </div>
           </label>
         </li>
         <li>
           <label>
             <div>
-              <img src="./../img/second-banner/ebook.svg" alt="전자책"><br>
-              <span>전자책</span>          
+              <a href="#" class="sticky-nav-underline">
+                <img src="./../img/second-banner/ebook.svg" alt="전자책"><br>
+                <span>전자책</span>
+              </a>
             </div>
           </label>
         </li>
         <li>
           <label>
             <div>
-              <img src="./../img/second-banner/event.svg" alt="행사"><br>
-              <span>행사</span>          
+              <a href="#" class="sticky-nav-underline">
+                <img src="./../img/second-banner/event.svg" alt="행사"><br>
+                <span>행사</span>
+              </a>
             </div>
           </label>
         </li>
         <li>
           <label>
             <div>
-              <img src="./../img/second-banner/opensource.svg" alt="오픈소스"><br>
-              <span>오픈소스</span>          
+              <a href="#" class="sticky-nav-underline">
+                <img src="./../img/second-banner/opensource.svg" alt="오픈소스"><br>
+                <span>오픈소스</span>
+              </a>
             </div>
           </label>
         </li>
         <li>
           <label>
             <div>
-              <img src="./../img/second-banner/goods.svg" alt="이모티콘/굿즈"><br>
-              <span>이모티콘/굿즈</span>          
+              <a href="#" class="sticky-nav-underline">
+                <img src="./../img/second-banner/goods.svg" alt="이모티콘/굿즈"><br>
+                <span>이모티콘/굿즈</span>
+              </a>
             </div>
           </label>
         </li>
         <li>
           <label>
             <div>
-              <img src="./../img/second-banner/etc.svg" alt="기타"><br>
-              <span>기타</span>          
+              <a href="#" class="sticky-nav-underline">
+                <img src="./../img/second-banner/etc.svg" alt="기타"><br>
+                <span>기타</span>
+              </a>
             </div>
           </label>
         </li>
       </ul>
     </nav>
-<!-- 여기에는 배너 12개... -->
-  <section class="sub-banner">
-    <div class="cards">
-      <img src="./../img/cards/card01.png" alt="card1" />
-      <div class="card-text">
-        <strong> 웹 서비스</strong>
-        <li class="card-text-side">
-          ICT WebBook 서비스
-        </li>
-      </div>
-      <h3 class="card-header">위니북스</h3> 
-    </div>
-
-    <div class="cards">
-      <img src="./../img/cards/card02.png" alt="card2" />
-      <div class="card-text">
-        <strong> 웹 서비스</strong>
-        <li class="card-text-side">
-          온라인 교육 플랫폼
-        </li>
-      </div>
-      <h3 class="card-header">위니버시티</h3>
-    </div>
-
-    <div class="cards">
-      <img src="./../img/cards/card03.png" alt="card3" />
+    <!-- 여기에는 배너 12개... -->
+    <section class="sub-banner">
+      <div class="cards">
+        <img src="./../img/cards/card01.png" alt="card1" />
         <div class="card-text">
-        <strong> 온라인 강의</strong>
-        <li class="card-text-side">
-          KDT 온라인 부트캠프
-        </li>
+          <strong> 웹 서비스</strong>
+          <li class="card-text-side">
+            ICT WebBook 서비스
+          </li>
+        </div>
+        <h3 class="card-header">위니북스</h3>
       </div>
-      <h3 class="card-header">모두연 액티브러닝 캠프 프론트엔드 개발자 과정</h3>
-    </div>
 
-    <div class="cards">
-      <img src="./../img/cards/card04.png" alt="card4" />
+      <div class="cards">
+        <img src="./../img/cards/card02.png" alt="card2" />
         <div class="card-text">
-        <strong> 온라인 강의</strong>
-        <li class="card-text-side">
-          KDT 온라인 부트캠프
-        </li>
+          <strong> 웹 서비스</strong>
+          <li class="card-text-side">
+            온라인 교육 플랫폼
+          </li>
+        </div>
+        <h3 class="card-header">위니버시티</h3>
       </div>
-      <h3 class="card-header">모두연 액티브러닝 캠프 백앤드 개발자 과정</h3>
-    </div>
 
-    <div class="cards">
-      <img src="./../img/cards/card05.png" alt="card5" />
+      <div class="cards">
+        <img src="./../img/cards/card03.png" alt="card3" />
         <div class="card-text">
-        <strong> 온라인 강의</strong>
-        <li class="card-text-side">
-          VOD 온라인 강의
-        </li>
+          <strong> 온라인 강의</strong>
+          <li class="card-text-side">
+            KDT 온라인 부트캠프
+          </li>
+        </div>
+        <h3 class="card-header">모두연 액티브러닝 캠프 프론트엔드 개발자 과정</h3>
       </div>
-      <h3 class="card-header">[인프런] 제주코딩베이스캠프</h3>
-    </div>
 
-    <div class="cards">
-      <img src="./../img/cards/card06.png" alt="card6" />
+      <div class="cards">
+        <img src="./../img/cards/card04.png" alt="card4" />
         <div class="card-text">
-        <strong> 온라인 강의</strong>
-        <li class="card-text-side">
-          VOD 온라인 강의
-        </li>
+          <strong> 온라인 강의</strong>
+          <li class="card-text-side">
+            KDT 온라인 부트캠프
+          </li>
+        </div>
+        <h3 class="card-header">모두연 액티브러닝 캠프 백앤드 개발자 과정</h3>
       </div>
-      <h3 class="card-header">[인프런] 더 오름(The Oreum)</h3>
-    </div>
 
-    <div class="cards">
-      <img src="./../img/cards/card07.png" alt="card7" />
+      <div class="cards">
+        <img src="./../img/cards/card05.png" alt="card5" />
         <div class="card-text">
-        <strong> 온라인 강의</strong>
-        <li class="card-text-side">
-          VOD 온라인 강의
-        </li>
+          <strong> 온라인 강의</strong>
+          <li class="card-text-side">
+            VOD 온라인 강의
+          </li>
+        </div>
+        <h3 class="card-header">[인프런] 제주코딩베이스캠프</h3>
       </div>
-      <h3 class="card-header">[인프런] 베이스캠프</h3>
-    </div>
 
-    <div class="cards">
-      <img src="./../img/cards/card08.png" alt="card8" />
+      <div class="cards">
+        <img src="./../img/cards/card06.png" alt="card6" />
         <div class="card-text">
-        <strong> 온라인 강의</strong>
-        <li class="card-text-side">
-          VOD 온라인 강의
-        </li>
+          <strong> 온라인 강의</strong>
+          <li class="card-text-side">
+            VOD 온라인 강의
+          </li>
+        </div>
+        <h3 class="card-header">[인프런] 더 오름(The Oreum)</h3>
       </div>
-      <h3 class="card-header">유튜브(YouTube)</h3>
-    </div>
 
-    <div class="cards">
-      <img src="./../img/cards/card09.png" alt="card9" />
+      <div class="cards">
+        <img src="./../img/cards/card07.png" alt="card7" />
         <div class="card-text">
-        <strong> 전자책</strong>
-        <li class="card-text-side">
-          MCP
-        </li>
+          <strong> 온라인 강의</strong>
+          <li class="card-text-side">
+            VOD 온라인 강의
+          </li>
+        </div>
+        <h3 class="card-header">[인프런] 베이스캠프</h3>
       </div>
-      <h3 class="card-header">MCP 혁신: 클로드로 엑셀, 한글, 휴가 등록부터 결재문서 자동화까지 with python</h3>
-    </div>
 
-    <div class="cards">
-      <img src="./../img/cards/card10.png" alt="card10" />
+      <div class="cards">
+        <img src="./../img/cards/card08.png" alt="card8" />
         <div class="card-text">
-        <strong> 전자책</strong>
-        <li class="card-text-side">
-          MCO
-        </li>
+          <strong> 온라인 강의</strong>
+          <li class="card-text-side">
+            VOD 온라인 강의
+          </li>
+        </div>
+        <h3 class="card-header">유튜브(YouTube)</h3>
       </div>
-      <h3 class="card-header">MCP Innovation: Automating File Handling, Excel, Leave Requests, and Document Approval with Claude and Python</h3>
-    </div>
 
-    <div class="cards">
-      <img src="./../img/cards/card11.png" alt="card11" />
+      <div class="cards">
+        <img src="./../img/cards/card09.png" alt="card9" />
         <div class="card-text">
-        <strong> 전자책</strong>
-        <li class="card-text-side">
-          MCP
-        </li>
+          <strong> 전자책</strong>
+          <li class="card-text-side">
+            MCP
+          </li>
+        </div>
+        <h3 class="card-header">MCP 혁신: 클로드로 엑셀, 한글, 휴가 등록부터 결재문서 자동화까지 with python</h3>
       </div>
-      <h3 class="card-header">MCP革新: Claudeで文書処理、Excel、休暇申請から決裁文書の自動化まで with python</h3>
-    </div>
 
-    <div class="cards">
-      <img src="./../img/cards/card12.png" alt="card12" />
+      <div class="cards">
+        <img src="./../img/cards/card10.png" alt="card10" />
         <div class="card-text">
-        <strong> 전자책</strong>
-        <li class="card-text-side">
-          ChatGPT
-        </li>
+          <strong> 전자책</strong>
+          <li class="card-text-side">
+            MCO
+          </li>
+        </div>
+        <h3 class="card-header">MCP Innovation: Automating File Handling, Excel, Leave Requests, and Document Approval
+          with Claude and Python</h3>
       </div>
-      <h3 class="card-header">となりの国・韓国ではChatGPT、生成型AIをどのように活用しているか정</h3>
+
+      <div class="cards">
+        <img src="./../img/cards/card11.png" alt="card11" />
+        <div class="card-text">
+          <strong> 전자책</strong>
+          <li class="card-text-side">
+            MCP
+          </li>
+        </div>
+        <h3 class="card-header">MCP革新: Claudeで文書処理、Excel、休暇申請から決裁文書の自動化まで with python</h3>
+      </div>
+
+      <div class="cards">
+        <img src="./../img/cards/card12.png" alt="card12" />
+        <div class="card-text">
+          <strong> 전자책</strong>
+          <li class="card-text-side">
+            ChatGPT
+          </li>
+        </div>
+        <h3 class="card-header">となりの国・韓国ではChatGPT、生成型AIをどのように活用しているか정</h3>
+      </div>
+    </section>
+    <!-- 페이지 이동하는 1,2,3,4,5 만드는 곳 -->
+    <div class="page">
+      <button class="pagebutton"> &lt; </button>
+          <a href="#" class="page-num">1</a>
+          <a href="#" class="page-num">2</a>
+          <a href="#" class="page-num">3</a>
+          <a href="#" class="page-num">4</a>
+          <a href="#" class="page-num">5</a>
+          <a href="#" class="page-num">...</a>
+          <a href="#" class="page-num">8</a>
+          <button class="pagebutton"> &gt; </button>
     </div>
-  </section>
-  <!-- 페이지 이동하는 1,2,3,4,5 만드는 곳 -->
-   <div class="page">
-    <button class="pagebutton"> < </button>
-    <a href="#" class="page-num">1</a>
-    <a href="#" class="page-num">2</a>
-    <a href="#" class="page-num">3</a>
-    <a href="#" class="page-num">4</a>
-    <a href="#" class="page-num">5</a>
-    <a href="#" class="page-num">...</a>
-    <a href="#" class="page-num">8</a>
-    <button class="pagebutton"> > </button>
-   </div>
   </main>
 
   <footer>
     <div class="footer--text-box">
       <a href="https://weniv.co.kr/">
-        <img src="./../img/weniv-logo-2023/weniv-dark.png" alt="weniv page"
-        width="10%" height="10%"> 
+        <img src="./../img/weniv-logo-2023/weniv-dark.png" alt="weniv page" width="10%" height="10%">
       </a>
-Copyright © WENIV All rights reserved<br>
-(주)위니브 | 대표 : 이호준 | 사업자번호 : 546-86-01737 | 정보통신업 | 주소 : 제주특별자치도 제주시 첨단로 330, A동 1층 CH-106호
+      Copyright © WENIV All rights reserved<br>
+      (주)위니브 | 대표 : 이호준 | 사업자번호 : 546-86-01737 | 정보통신업 | 주소 : 제주특별자치도 제주시 첨단로 330, A동 1층 CH-106호
     </div>
   </footer>
 </body>
+
 </html>
