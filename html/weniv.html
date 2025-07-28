@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WENIV 클론코딩</title>
   <link rel="stylesheet" href="./../css/weniv.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -53,9 +54,11 @@
         <h2>어떤 콘텐츠를 찾으시나요?</h2>
         <!-- form 태그 -->
         <form action="" method="get">
-          <input type="text" id="search-input" placeholder="검색어를 입력하세요" />
-          <button type="button"><img src="./../img/search.svg" alt="searcg"> 찾기
-          </button>
+          <div class="find-box">
+            <input type="text" id="search-input" placeholder="검색어를 입력하세요" />
+            <button type="button"><i class="fa fa-search fa-xl"></i>
+            </button>
+          </div>
         </form>
         </div>
         </ul>
@@ -65,82 +68,89 @@
     <nav class="sticky-nav">
       <ul>
         <li class="basic">
-          <label>
-            <div>
-              <a href="#" class="sticky-nav-underline">
+          <input type="radio" id="click1" class="click"name="1">
+          <label for="click1" class="click-label">  
+            <div class="change">
+
                 <img src="./../img/second-banner/all.svg" alt="전체보기"><br>
                 <span>전체보기</span>
-              </a>
+
             </div>
           </label>
         </li>
         <li>
-          <label>
-            <div>
-              <a href="#" class="sticky-nav-underline">
+          <input type="radio" id="click2" class="click"name="1">
+          <label for="click2" class="click-label">
+            <div class="change">
                 <img src="./../img/second-banner/web-service.svg" alt="웹서비스"><br>
                 <span>웹 서비스</span>
-              </a>
+
             </div>
           </label>
         </li>
         <li>
-          <label>
-            <div>
-              <a href="#" class="sticky-nav-underline">
+          <input type="radio" id="click3" class="click"name="1">
+          <label for="click3"class="click-label">
+            <div class="change">
+
                 <img src="./../img/second-banner/online.svg" alt="온라인 강의"><br>
                 <span>온라인 강의</span>
-              </a>
+
             </div>
           </label>
         </li>
         <li>
-          <label>
-            <div>
-              <a href="#" class="sticky-nav-underline">
+          <input type="radio" id="click4" class="click"name="1">
+          <label for="click4"class="click-label">
+            <div class="change">
+
                 <img src="./../img/second-banner/ebook.svg" alt="전자책"><br>
                 <span>전자책</span>
-              </a>
+
             </div>
           </label>
         </li>
         <li>
-          <label>
-            <div>
-              <a href="#" class="sticky-nav-underline">
+          <input type="radio" id="click5" class="click"name="1">
+          <label for="click5"class="click-label">
+            <div class="change">
+
                 <img src="./../img/second-banner/event.svg" alt="행사"><br>
                 <span>행사</span>
-              </a>
+
             </div>
           </label>
         </li>
         <li>
-          <label>
-            <div>
-              <a href="#" class="sticky-nav-underline">
+          <input type="radio" id="click6" class="click"name="1">
+          <label for="click6"class="click-label">
+            <div class="change">
+
                 <img src="./../img/second-banner/opensource.svg" alt="오픈소스"><br>
                 <span>오픈소스</span>
-              </a>
+
             </div>
           </label>
         </li>
         <li>
-          <label>
-            <div>
-              <a href="#" class="sticky-nav-underline">
+          <input type="radio" id="click7" class="click"name="1">
+          <label for="click7"class="click-label">
+            <div class="change">
+
                 <img src="./../img/second-banner/goods.svg" alt="이모티콘/굿즈"><br>
                 <span>이모티콘/굿즈</span>
-              </a>
+
             </div>
           </label>
         </li>
         <li>
-          <label>
-            <div>
-              <a href="#" class="sticky-nav-underline">
+          <input type="radio" id="click8" class="click"name="1">
+          <label for="click8"class="click-label">
+            <div class="change">
+
                 <img src="./../img/second-banner/etc.svg" alt="기타"><br>
                 <span>기타</span>
-              </a>
+
             </div>
           </label>
         </li>
@@ -284,14 +294,14 @@
     <!-- 페이지 이동하는 1,2,3,4,5 만드는 곳 -->
     <div class="page">
       <button class="pagebutton"> &lt; </button>
-          <a href="#" class="page-num">1</a>
-          <a href="#" class="page-num">2</a>
-          <a href="#" class="page-num">3</a>
-          <a href="#" class="page-num">4</a>
-          <a href="#" class="page-num">5</a>
-          <a href="#" class="page-num">...</a>
-          <a href="#" class="page-num">8</a>
-          <button class="pagebutton"> &gt; </button>
+      <a href="#" class="page-num">1</a>
+      <a href="#" class="page-num">2</a>
+      <a href="#" class="page-num">3</a>
+      <a href="#" class="page-num">4</a>
+      <a href="#" class="page-num">5</a>
+      <a href="#" class="page-num">...</a>
+      <a href="#" class="page-num">8</a>
+      <button class="pagebutton"> &gt; </button>
     </div>
   </main>
 
